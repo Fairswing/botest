@@ -1,0 +1,11 @@
+name: esempio workfolw
+
+on: [push]
+
+jobs: 
+  build:
+    runs-on: ubuntu
+    steps:
+    - uses: actions/checkout@v2
+    - name: run a one-line script
+      run: echo Hello, world!
